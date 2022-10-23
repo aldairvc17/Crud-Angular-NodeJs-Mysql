@@ -22,7 +22,7 @@ export class ModificarComponent implements OnInit {
     this.id_entrada = <string>this.antivateRouter.snapshot.params['id'];
     this.equipoService.getUnEquipo(this.id_entrada).subscribe(
       res => {
-        this.equipoActual = res[0]; // Se obtiene el primero de la lista obtenida
+        this.equipoActual = res; //Se obtiene el objeto
         console.log(this.equipoActual);
       },
       err => console.log(err)

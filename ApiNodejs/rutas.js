@@ -19,7 +19,7 @@ router.get('/:id', (req, res) =>{
     conexion.query(sql, [id], (err, rows, fields) => {
         if(err) throw err;
         else{
-            res.json(rows)
+            res.json(rows[0])
         }
     })
 })

@@ -17,12 +17,11 @@ export class EquipoService {
   }
 
   /**
-   * Metodo para retornar un equipo, pero en realidad retorna una lista
-   * por lo cual se tiene que poner res[0] en el componente modificar
+   * Metodo para retornar un equipo
    * id:string => id del equipo a obtener
    */
   getUnEquipo(id:string){
-    return this.http.get<Equipo[]>(this.url+'/'+id);
+    return this.http.get(this.url+'/'+id);
   }
 
   /**
