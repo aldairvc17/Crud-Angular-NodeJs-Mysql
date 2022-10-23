@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+       <label for="id_equipo"> Equipo </label>
+       <input type="text" class="form-control" name="id_equipo" id="id_equipo" [(ngModel)]="equipoActual.id_equipo">
+    </div>
+    <div class="form-group">
+        <label for="nombre"> Nombre </label>
+        <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="equipoActual.nombre">
+    </div>
+    <div class="form-group">
+        <label for="logo"> Logo </label>
+        <input type="text" class="form-control" name="logo" id="logo" [(ngModel)]="equipoActual.logo">
+    </div>
+    <button class="btn btn-primary" (click)="guardar()"> Guardar</button>
+  </form>
