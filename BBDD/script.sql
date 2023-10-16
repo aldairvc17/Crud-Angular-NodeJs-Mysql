@@ -7,4 +7,4 @@ create table tb_equipo (
     nombre varchar(50),
     logo varchar(200)
 );
-insert into tb_equipo (nombre, logo) values ('equipo01', 'https://images.pexels.com/photos/10083580/pexels-photo-10083580.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
+insert into tb_equipo (nombre, logo) values ('equipo02', 'https://images.pexels.com/photos/10083580/pexels-photo-10083580.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
